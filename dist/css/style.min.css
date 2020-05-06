@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+html, body {
+  font-family: 'Lato', sans-serif;
+}
+
+.section-padding {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.btn-custom-blue {
+  background-color: #0c2461;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn-custom-blue:hover {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.btn-custom-blue-light {
+  background-color: #1e3799;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn-custom-blue-light:hover {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.heading {
+  margin-bottom: 1.5rem;
+}
+
+.item {
+  padding: 1.5rem;
+}
+
+.item .heading {
+  margin-bottom: 1rem;
+}
+
+.item .title {
+  margin-bottom: 1.5rem;
+}
+
+#collection-form,
+#collection-form-create {
+  display: none;
+  z-index: 999;
+  padding: 1.5rem;
+  padding-top: 120px;
+  background-color: rgba(0, 0, 0, 0.9);
+  width: 100%;
+  overflow-y: scroll;
+}
+
+label {
+  color: #fff;
+}
+
+.form-control {
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  border-bottom: 3px solid #fff;
+  height: 50px;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  font-size: 1.1rem;
+  color: #fff;
+  font-weight: 800;
+}
+
+.form-control option {
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+.form-control:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: transparent;
+  outline: none;
+  color: #fff;
+}
+
+.navbar {
+  background-color: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  z-index: 999;
+}
+
+.navbar .navbar-brand {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.navbar .navbar-brand:hover {
+  color: #fff;
+}
+
+.navbar .navbar-nav .nav-link {
+  margin-right: 20px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  color: #fff;
+}
+
+.landing-background {
+  position: relative;
+  background: url("../../img/anime-cover-2.jpg") 50% 50% no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 70vh;
+}
+
+.landing-background::after {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.landing-background .welcome-section {
+  padding-left: 15px;
+  padding-right: 15px;
+  z-index: 999;
+  color: #fff;
+  text-align: left;
+  position: absolute;
+  top: 50%;
+  right:0;
+  left:0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+#addCollectionCTA {
+    margin-bottom:1.5rem;
+}
+
+.recently-read {
+  position: relative;
+  top: -50px;
+  max-width: 1140px;
+  margin-left:15px;
+  margin-right:15px;
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.collection-list .collection-item {
+  position: relative;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #fff;
+  background-color: #f7f7f7;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.collection-list .collection-item::after {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.collection-list .collection-item .heading h1 {
+  color: #fff;
+}
+
+.manga-list .manga-item {
+  background-color: #0c2461;
+  padding: 1.5rem;
+  border-radius: 3px;
+  color: #fff;
+}
+
+.manga-list .ui-actions a {
+  font-weight: 400;
+}
+
+.manga-card .manga-card-img {
+    width:100%;
+    position:relative;
+}
+
+.manga-card .manga-card-img img {
+    height:300px;
+     -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 50% 50%;
+       object-position: 50% 50%;
+}
+
+.manga-card .manga-card-body {
+    width:100%;
+}
+
+#collection-item-form {
+    max-width:500px;
+    margin:0 auto;
+}
+
+@media(min-width:425px) {
+    .welcome-section .ui-actions {
+        display:flex;
+        flex-direction:column;
+        width:300px;
+    }
+    
+    .recently-read {
+        margin: 0 auto;
+    }
+    
+    .manga-card .manga-card-body {
+        position:initial;
+        bottom:0;
+        width:100%;
+    }
+    
+    
+}
+/*# sourceMappingURL=style.min.css.map */
