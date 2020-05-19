@@ -1,8 +1,16 @@
 <?php
+session_start();
+
 header('Content-Type: application/json');
 header('Access-Control-Allow-Origin: https://www.ryanwilliamharper.com');
 include_once '../config/Database.php';
 include_once '../models/CollectionItem.php';
+
+if(!isset($_SESSION["user_id"])) {
+    http_response_code(403);
+    echo json_encode(array('msg' => 'Error'));
+    exit();
+};
 
 if($_SERVER["REQUEST_METHOD"] === "POST") {
     $database = new Database();
